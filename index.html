@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script type="text/javascript">
+        // F12 버튼 방지 
+            $(document).ready(function(){ 
+                $(document).bind('keydown',function(e){ 
+                    if ( e.keyCode == 123 /* F12 */) { 
+                        e.preventDefault(); e.returnValue = false; 
+                    } 
+                }); 
+            });
+        // 우측 클릭 방지
+            document.onmousedown=disableclick;
+                status="Right click is not available.";
+                    function disableclick(event){
+                        if (event.button==2) {
+                        alert(status); return false; 
+                        } 
+                    } 
+        </script>
+    <title>9반 시간표</title>
+    <link rel="shortcut icon" href="favicon/favicon.ico">
+    <link rel="icon" href="favicon/favicon.ico">
+    <style>
+        body{background-color: white; font-family: jua; font-size: 20px; -ms-user-select: none; -moz-user-select: -moz-none; -webkit-user-select: none; -khtml-user-select: none; user-select:none;}
+        h1{text-align: center; font-family: 레코체;}
+        .material-icons{font-size: 5rem; text-decoration-color: white;}
+        table{
+            border: 0px solid;  border-collapse: collapse; text-align: center; width: 40%; height: 70%; border-color: #000c4a; padding-bottom: 10px;
+        }
+        th, td{border: 4px solid; padding: 10px 13px; border-color: #000c4a;}
+        th{background-color: #ffb75f; color:#000c4a; font-size: 23px;}
+        td{background-color: white; color:#000c4a; width: 300px;}
+        a{color: #000c4a;}
+        @font-face {src : url("BM.ttf"); font-family: "jua"}
+        @font-face {src: url("레코체.ttf"); font-family: "레코체";}
+        .alert{font-size: 15px; padding-left: 30%;}
+        .Time{background-color: #eaeaea;}
+    </style>
+</head>
+<body oncontextmenu='return false' onselectstart='return false' ondragstart='return false'>
+    <h1 style="font-size: 50px;">
+        <span style="color: #000c4a; font-size: 70px;">9반</span>
+        <span> </span>
+        <span style="color: #a7dff8; font-size: 70px; text-shadow: -4px 0 #333, 0 4px #333, 4px 0 #333, 0 -4px #333;">시간표</span>
+    </h1>
+    <table align="center">
+        <tr>
+            <th></th>
+            <th>M</th>
+            <th>T</th>
+            <th>W</th>
+            <th>T</th>
+            <th>F</th>
+        </tr>
+        <tr>
+            <td class="Time">1교시<br>8:50~9:30</th>
+            <td><a href="https://zoom.us/j/91669846604?pwd=SDRzUU5MSWhCTGR0S3F6czI1eDlvdz09" target="_blank">과학B</a></td>
+            <td><a href="https://us04web.zoom.us/j/79802431720?pwd=UUhidStRd3lTWDZqQTYyVlp3NUxOUT09" target="_blank">연극</a></td>
+            <td><a href="https://zoom.us/j/7427687601?pwd=a1BlYVRvWGlMbW9WNGNVWk9ZZWw1UT09" target="_blank">미술</a></td>
+            <td><a href="https://us02web.zoom.us/j/3262356973?pwd=aHVKa3o4R0tTTUkrVXo3dmhUNU4zZz09" target="_blank">영어</a></td>
+            <td><a href="https://zoom.us/j/91669846604?pwd=SDRzUU5MSWhCTGR0S3F6czI1eDlvdz09" target="_blank">과학B</a></td>
+        </tr>
+    </tbody>
+
+    <tbody>
+        <tr>
+            <td class="Time">2교시<br>9:45~10:25</th>
+            <td><a href="https://us02web.zoom.us/j/3262356973?pwd=aHVKa3o4R0tTTUkrVXo3dmhUNU4zZz09" target="_blank">영어</a></td>
+            <td><a href="https://us04web.zoom.us/j/3300354265?pwd=OXl0Z0ZPTnQvZVVxSVhJYVhDQmRyUT09" target="_blank">체육</a></td>
+            <td><a href="https://zoom.us/j/7427687601?pwd=a1BlYVRvWGlMbW9WNGNVWk9ZZWw1UT09" target="_blank">미술</a></td>
+            <td><a href="https://zoom.us/j/98425736812?pwd=R1pCbC8xMVhGT2ZOaVhZUEI2bndUZz09" target="_blank">국어</a></td>
+            <td><a href="https://zoom.us/j/8169709257?pwd=SGxtZDdXWE1FSjVhdS9BaS9RSmRJUT09" target="_blank">과학A</a></td>
+        </tr>
+    </tbody>
+    
+    <tbody>
+        <tr>
+            <td class="Time">3교시<br>10:40~11:20</th>
+            <td><a href="https://zoom.us/j/7873203915?pwd=eFJpSStqemh6OFBVUnV4RTBtdGlhQT09" target="_blank">일본어</a></td>
+            <td><a href="https://zoom.us/j/4215857647?pwd=MU9XMjVnY1RNWS9xRzZSWGtmeGpXdz09" target="_blank">수학</a></td>
+            <td><a href="https://us02web.zoom.us/j/3262356973?pwd=aHVKa3o4R0tTTUkrVXo3dmhUNU4zZz09" target="_blank">영어</a></td>
+            <td><a href="https://zoom.us/j/7966286598?pwd=OVhlNk9UMjN2NWQ1d3lvNmw1ek1QQT09" target="_blank">사회</a></td>
+            <td><a href="https://zoom.us/j/93126079663?pwd=OXo2QWh6MVBQc1BkbGtGUDJqcTBoZz09" target="_blank">역사</a></td>
+        </tr>
+    <tbody>
+        <tr>
+            <td class="Time">4교시<br>11:35~12:15</th>
+            <td><a href="https://zoom.us/j/8169709257?pwd=SGxtZDdXWE1FSjVhdS9BaS9RSmRJUT09" target="_blank">과학A</a></td>
+            <td><a href="https://zoom.us/j/93126079663?pwd=OXo2QWh6MVBQc1BkbGtGUDJqcTBoZz09" target="_blank">역사</a></td>
+            <td><a href="https://zoom.us/j/2401780273?pwd=Mi93SGdZYVVwVUZVbHVBTGVNM0k0dz09" target="_blank">기술</a></td>
+            <td><a href="https://zoom.us/j/95762001469?pwd=cTFzWmwwL1RUdWNQTmw0Y0JXbkxKZz09" target="_blank">가정</a></td>
+            <td><a href="https://zoom.us/j/98425736812?pwd=R1pCbC8xMVhGT2ZOaVhZUEI2bndUZz09" target="_blank">국어</a></td>
+        </tr>
+    <tbody>
+        <tbody>
+            <tr>
+                <td class="Time">점심시간<br>12:15~13:05</th>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+        <tbody>
+        <tr>
+            <td class="Time">5교시<br>13:05~13:45</th>
+            <td><a href="https://us04web.zoom.us/j/3300354265?pwd=OXl0Z0ZPTnQvZVVxSVhJYVhDQmRyUT09" target="_blank">체육</a></td>
+            <td><a href="https://zoom.us/j/7966286598?pwd=OVhlNk9UMjN2NWQ1d3lvNmw1ek1QQT09" target="_blank">사회</a></td>
+            <td><a href="https://zoom.us/j/2401780273?pwd=Mi93SGdZYVVwVUZVbHVBTGVNM0k0dz09" target="_blank">기술</a></td>
+            <td><a href="https://zoom.us/j/4215857647?pwd=MU9XMjVnY1RNWS9xRzZSWGtmeGpXdz09" target="_blank">수학</a></td>
+            <td><a href="https://zoom.us/j/95762001469?pwd=cTFzWmwwL1RUdWNQTmw0Y0JXbkxKZz09" target="_blank">가정</a></td>
+        </tr>
+    <tbody>
+        <tr>
+            <td class="Time">6교시<br>14:00~14:40</th>
+            <td><a href="https://zoom.us/j/4215857647?pwd=MU9XMjVnY1RNWS9xRzZSWGtmeGpXdz09" target="_blank">수학</a></td>
+            <td><a href="https://zoom.us/j/7873203915?pwd=eFJpSStqemh6OFBVUnV4RTBtdGlhQT09" target="_blank">일본어</a></td>
+            <td><a href="https://zoom.us/j/98425736812?pwd=R1pCbC8xMVhGT2ZOaVhZUEI2bndUZz09" target="_blank">국어</a></td>
+            <td><a href="https://us04web.zoom.us/j/3300354265?pwd=OXl0Z0ZPTnQvZVVxSVhJYVhDQmRyUT09" target="_blank">체육</a></td>
+            <td><a href="https://us02web.zoom.us/j/3262356973?pwd=aHVKa3o4R0tTTUkrVXo3dmhUNU4zZz09" target="_blank">영어</a></td>
+        </tr>
+    <tbody>
+        <tr>
+            <td class="Time">7교시<br>14:55~15:35</th>
+            <td></td>
+            <td><a href="https://zoom.us/j/7568903279?pwd=TEtObGF5a3drdXFVZXpXOWtxZ0lVUT09" target="_blank">창체</a></td>
+            <td><a href="https://rang.edunet.net/class/G001627223/hmwkList.do" target="_blank">스포츠</a></td>
+            <td></td>
+            <td></td>
+        </tr>
+    <tbody>
+        <tr>
+            <td class="Time">종례</th>
+            <td><a href="https://zoom.us/j/8169709257?pwd=SGxtZDdXWE1FSjVhdS9BaS9RSmRJUT09" target="_blank">14:45</a></td>
+            <td><a href="https://zoom.us/j/8169709257?pwd=SGxtZDdXWE1FSjVhdS9BaS9RSmRJUT09" target="_blank">15:40</a></td>
+            <td><a href="https://zoom.us/j/8169709257?pwd=SGxtZDdXWE1FSjVhdS9BaS9RSmRJUT09" target="_blank">15:40</a></td>
+            <td><a href="https://zoom.us/j/8169709257?pwd=SGxtZDdXWE1FSjVhdS9BaS9RSmRJUT09" target="_blank">14:45</a></td>
+            <td><a href="https://zoom.us/j/8169709257?pwd=SGxtZDdXWE1FSjVhdS9BaS9RSmRJUT09" target="_blank">14:45</a></td>
+        </tr>
+    </table>
+    <h2>
+        <span class="alert">- 이 시간표는 2021.04.12에 마지막으로 업데이트 되었습니다.</span>
+        <br>
+        <span class="alert">- 시간표의 오류가 있을 시 getji1227@gmail.com을 통해 신고해 주시길 바랍니다.</span>
+    </h2>
+</body>
+</html>
