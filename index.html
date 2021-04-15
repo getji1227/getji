@@ -39,6 +39,26 @@
         @font-face {src: url("레코체.ttf"); font-family: "레코체";}
         .alert{font-size: 15px; padding-left: 30%;}
         .Time{background-color: #eaeaea;}
+        .btn-grad {background-image: linear-gradient(to right, #232526 0%, #414345  51%, #232526  100%)}
+        .btn-grad {
+            margin: 10px;
+            padding: 15px 45px;
+            text-align: center;
+            text-transform: uppercase;
+            transition: 0.5s;
+            background-size: 200% auto;
+            color: white;            
+            box-shadow: 0 0 20px #eee;
+            border-radius: 10px;
+            display: block;
+          }
+
+         .btn-grad:hover {
+            background-position: right center; /* change the direction of the change here */
+            color: #fff;
+            text-decoration: none;
+          }
+         
     </style>
 </head>
 <body oncontextmenu='return false' onselectstart='return false' ondragstart='return false'>
@@ -143,6 +163,7 @@
         </tr>
     </table>
     <h2>
+        <button class="btn-grad" onclick="javascript:alert('getji')">getji</button>
         <span class="alert">- 이 시간표는 2021.04.13에 마지막으로 업데이트 되었습니다.</span>
         <br>
         <span class="alert">- 현채 pretty 현채 윷찬 윷찬 찬우 현채 채현</span>
